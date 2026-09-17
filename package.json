@@ -10,21 +10,24 @@
     "web": "expo start --web"
   },
   "dependencies": {
-    "@aws-amplify/backend": "^1.16.0",
-    "@aws-amplify/backend-cli": "^1.8.0",
-    "@aws-sdk/client-secrets-manager": "^3.900.0",
-    "aws-amplify": "^6.15.0",
-    "aws-cdk-lib": "^2.230.0",
-    "expo-image-picker": "~17.0.0",
-    "expo": "~54.0.0",
-    "expo-status-bar": "~3.0.0",
-    "mysql2": "^3.14.4",
+    "@aws-amplify/backend": "1.25.0",
+    "@aws-amplify/backend-cli": "1.10.0",
+    "@aws-sdk/client-secrets-manager": "3.900.0",
+    "aws-amplify": "6.15.0",
+    "aws-cdk-lib": "2.269.0",
+    "expo-image-picker": "17.0.0",
+    "expo": "54.0.0",
+    "expo-status-bar": "3.0.0",
+    "mysql2": "3.14.4",
     "react": "19.1.0",
     "react-native": "0.81.4"
   },
   "devDependencies": {
-    "@types/node": "^24.0.0",
-    "constructs": "^10.4.2",
-    "esbuild": "^0.25.9"
+    "@types/node": "24.0.0",
+    "constructs": "10.6.0",
+    "esbuild": "0.25.9"
+  },
+  "overrides": {
+    "minimatch": "10.2.5"
   }
 }
