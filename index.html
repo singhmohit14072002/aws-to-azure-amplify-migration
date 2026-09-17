@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="NORA - thoughtful everyday goods for modern living." />
+    <title>NORA — Thoughtful everyday goods</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="announcement">Free shipping on orders over $75 <span>•</span> Easy 30-day returns</div>
+      <nav class="nav container" aria-label="Main navigation">
+        <button class="mobile-menu" id="mobile-menu" aria-label="Open menu">☰</button>
+        <a class="logo" href="#" aria-label="Nora home">nora<span>.</span></a>
+        <div class="nav-links" id="nav-links">
+          <a href="#shop">Shop</a>
+          <a href="#story">Our story</a>
+          <a href="#journal">Journal</a>
+        </div>
+        <div class="nav-actions">
+          <button class="icon-button" id="search-toggle" aria-label="Open search">⌕</button>
+          <button class="icon-button cart-button" id="cart-open" aria-label="Open shopping bag">♧<span class="cart-count" id="cart-count">0</span></button>
+        </div>
+      </nav>
+      <div class="search-bar container" id="search-bar">
+        <label for="search-input">Search products</label>
+        <input id="search-input" type="search" placeholder="Try “linen”, “ceramic”..." />
+      </div>
+    </header>
+
+    <main>
+      <section class="hero container">
+        <div class="hero-copy">
+          <p class="eyebrow">Made for your everyday</p>
+          <h1>Good things,<br /><em>well chosen.</em></h1>
+          <p class="hero-text">Thoughtful objects for a calmer, more considered home. Designed to be lived with, loved, and kept.</p>
+          <a class="button button-dark" href="#shop">Explore the collection <span>→</span></a>
+        </div>
+        <div class="hero-image">
+          <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&q=85" alt="Warmly styled living room with a neutral sofa" />
+          <div class="hero-note"><span>01</span><span>Objects with intention</span></div>
+        </div>
+      </section>
+
+      <section class="value-strip">
+        <div class="container values">
+          <div><strong>01</strong><span>Quietly beautiful<br />design</span></div>
+          <div><strong>02</strong><span>Materials that<br />age gracefully</span></div>
+          <div><strong>03</strong><span>Small-batch,<br />always intentional</span></div>
+        </div>
+      </section>
+
+      <section class="shop-section container" id="shop">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">The collection</p>
+            <h2>Find your next <em>favorite.</em></h2>
+          </div>
+          <div class="filters" role="group" aria-label="Filter products">
+            <button class="filter active" data-category="All">All</button>
+            <button class="filter" data-category="Home">Home</button>
+            <button class="filter" data-category="Wear">Wear</button>
+            <button class="filter" data-category="Objects">Objects</button>
+          </div>
+        </div>
+        <div class="product-grid" id="product-grid"></div>
+        <p class="empty-state" id="empty-state">No pieces found. Try another search.</p>
+      </section>
+
+      <section class="story-section container" id="story">
+        <div class="story-image"><img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=1100&q=85" alt="Minimal dining area with natural materials" /></div>
+        <div class="story-copy">
+          <p class="eyebrow">A little more meaning</p>
+          <h2>Less, but <em>better.</em></h2>
+          <p>We believe the things around us shape how we feel. NORA brings together useful, enduring pieces from independent makers who care about the details.</p>
+          <a class="text-link" href="#journal">Read our story <span>↗</span></a>
+        </div>
+      </section>
+
+      <section class="newsletter container" id="journal">
+        <div><p class="eyebrow">The NORA journal</p><h2>Notes on living<br /><em>with intention.</em></h2></div>
+        <form id="newsletter-form"><label for="email">Get occasional notes, new arrivals, and good things.</label><div class="email-row"><input id="email" type="email" placeholder="Your email address" required /><button class="button button-dark" type="submit">Sign me up <span>→</span></button></div><p class="form-message" id="form-message"></p></form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner"><a class="logo" href="#">nora<span>.</span></a><p>Thoughtful everyday goods.<br />Made to stay.</p><div class="footer-links"><a href="#shop">Shop</a><a href="#story">About</a><a href="mailto:hello@nora.example">Contact</a></div><small>© 2024 NORA Studio</small></div>
+    </footer>
+
+    <aside class="cart-drawer" id="cart-drawer" aria-label="Shopping bag" aria-hidden="true">
+      <div class="cart-head"><h2>Your bag <span id="cart-heading-count">(0)</span></h2><button class="close-button" id="cart-close" aria-label="Close shopping bag">×</button></div>
+      <div class="cart-items" id="cart-items"></div>
+      <div class="cart-footer"><div class="subtotal"><span>Subtotal</span><strong id="cart-total">$0.00</strong></div><p>Shipping and taxes calculated at checkout.</p><button class="button button-dark checkout-button" id="checkout">Continue to checkout <span>→</span></button></div>
+    </aside>
+    <div class="overlay" id="overlay"></div>
+    <script src="app.js"></script>
+  </body>
+</html>

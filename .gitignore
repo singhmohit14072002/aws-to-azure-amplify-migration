@@ -1,0 +1,8 @@
+node_modules/
+.expo/
+dist/
+web-build/
+amplify_outputs.json
+.env
+.env.*
+!.env.example
