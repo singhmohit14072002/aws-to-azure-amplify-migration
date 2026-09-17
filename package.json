@@ -12,7 +12,7 @@
   "dependencies": {
     "@aws-amplify/backend": "1.25.0",
     "@aws-amplify/backend-cli": "1.10.0",
-    "@aws-sdk/client-secrets-manager": "3.900.0",
+    "@aws-sdk/client-secrets-manager": "3.1134.0",
     "aws-amplify": "6.15.0",
     "aws-cdk-lib": "2.269.0",
     "expo-image-picker": "17.0.0",
