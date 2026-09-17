@@ -26,5 +26,8 @@
     "@types/node": "24.0.0",
     "constructs": "10.6.0",
     "esbuild": "0.25.9"
+  },
+  "overrides": {
+    "minimatch": "10.1.3"
   }
 }
