@@ -3,6 +3,7 @@ backend:
   phases:
     preBuild:
       commands:
+        - npm config set registry https://registry.npmjs.org/
         - npm install --prefer-offline --no-audit --no-fund --progress=false
     build:
       commands:
