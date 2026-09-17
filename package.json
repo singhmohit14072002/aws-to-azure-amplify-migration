@@ -28,6 +28,7 @@
     "esbuild": "0.25.9"
   },
   "overrides": {
-    "minimatch": "9.0.5"
+    "minimatch": "9.0.5",
+    "glob": "10.3.12"
   }
 }
